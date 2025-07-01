@@ -67,14 +67,25 @@
 
 # protected code (_ single underscore)
 
-class pro():
-    _name="karan"
-    _age=42
-    def dis(s):
-        print("name is",s._name)
-        print("age is",s._age)
-c=pro()
-c._name="raina"
-c.dis()
-print("name iss",c._name)
-print("age iss",c._age)
+# class pro():
+#     _name="karan"
+#     _age=42
+#     def dis(s):
+#         print("name is",s._name)
+#         print("age is",s._age)
+# c=pro()
+# c._name="raina"
+# c.dis()
+# print("name iss",c._name)
+# print("age iss",c._age)
+
+# class en():
+#     def setname(s,n):
+#         s.__n=n
+#     def getname(s):
+#         return s.__n
+#     def dis(s):
+#         print(s.getname())
+# a=en()
+# a.setname("kamal")
+# a.dis()

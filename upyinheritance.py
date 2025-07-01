@@ -256,5 +256,190 @@
 
 # 5.hybrid 
 
+# class dog():
+#     def fun1(s):
+#         print("dog")
+# class cat(dog): #its called single inheritance
+#     def fun2(s):
+#         print("cat")
+# class elephant(dog): #its called hirarical inheritance
+#     def fun3(s):
+#         print("elephant")
+# class horse(cat,elephant): #its called multiple inheritance
+#     def fun4(s):
+#         print("horse")
+# bj=horse()
+# bj.fun1()
+# bj.fun2()
+# bj.fun3()
+# bj.fun4()
 
+
+#   inheritance with same method name
+
+# class a():
+#     def f(s):
+#         print("hi")
+# class b():
+#     def f(s):
+#         print("hello")
+# class c(a,b):  # MRO concept (method reslution order) class a is first execute after b class  execute
+#     pass
+# bj=c()
+# bj.f()
+
+# class a():
+#     def f(s):
+#         print("hi")
+# class b():
+#     def f(s):
+#         print("hello")
+# class c(a,b):  # MRO concept (method reslution order) class c is first execute class a is seecond execute after b class  execute
+#     def f(s):
+#         print("ji")
+# bj=c()
+# bj.f()
+
+
+# class a():
+#     def f(self):
+#         print("a")
+# class b(a):
+#     pass
+#     # def f(self):
+#     #     print("b")
+# class c(a):
+#     pass
+#     # def f(self):
+#     #     print("c")
+# class d(b):
+#     pass
+#     # def f(self):
+#     #     print("d")
+# class e(c):
+#     pass
+#     # def f(self):
+#     #     print("e")
+# class f(d,e):
+#     pass  
+#     # def f(self):
+#     #     print("f")
+
+# print(f.__mro__)
+
+# bj=f()
+# bj.f()
+
+
+# super method
+# directly call anotherr class functin
+# class a():
+#     def __init__(self):
+#         print("hi")
+# class b(a):
+#     def __init__(self):
+#         super().__init__()
+#         print("hello")
+# kl=b()
+
+# class a():
+#     def f1(s):
+#         print("A")
+# class b(a):
+#     def f2(s):
+#         print("B")
+# class c(b):
+#     def f3(s):
+#         super().f1()
+#         super().f2()
+#         print("C")
+
+# k=c()
+# k.f3()
+
+# class a():
+#     def f1(s):
+#         print("A")
+# class b(a):
+#     def f2(s):
+#         print("B")
+#         super.f1()
+# class c(a):
+#     def f3(s):
+#         super().f2()
+        
+#         print("C")
+
+# k=c()
+# k.f3()
+    
+# class a():
+#     def f1(s):
+#         print("A")
+# class b():
+#     def f2(s):
+#         print("B")
+# class c(a,b):
+#     def f3(s):
+#         super().f1()
+#         super().f2()
+#         print("C")
+
+# k=c()
+# k.f3()
+
+
+# class a():
+#     def f1(s):
+#         print("A")
+# class b(a):
+#     def f2(s):
+#         print("B")
+# class c(b):
+#     def f3(s):
+#         print("C")
+# class d(b,c):
+#     def f4(s):
+#         super().f1()
+#         super().f2()
+#         super().f3()
+#         print("D")
+
+# k=c()
+# k.f4()
+    
+# class dog():
+#     def fun1(s):
+#         print("dog")
+# class cat(dog): #its called single inheritance
+#     def fun2(s):
+#         print("cat")
+# class elephant(dog): #its called hirarical inheritance
+#     def fun3(s):
+#         print("elephant")
+# class horse(cat,elephant): #its called multiple inheritance
+#     def fun4(s):
+#         super().fun2()
+#         super().fun1()
+#         super(). fun3()
+#         print("horse")
+# bj=horse()
+# bj.fun4()
+
+# class parent():
+#     def __init__(self):
+#         print("Father")
+#         print("Mother0")
+# class child1(parent):
+#     def child1name(self):
+#         super().__init__()
+#         print("child1name is name")
+# class child2(parent):
+#     def child2name(self):
+#         super().__init__()
+#         print("child2name is child")
+# obj=child1()
+# obj1=child2()
+# obj.child1name()
+# obj1.child2name()
 
